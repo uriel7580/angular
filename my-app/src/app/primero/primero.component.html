@@ -1,8 +1,12 @@
 <p *ngIf='ok'>
   primero works!
 </p>
-<!--<ul>
-  <li style="color:red" *ngFor="let p of result">
-    {{p}}
-  </li>
-</ul>-->
+<div>
+  <span>Ver pokemonses</span><input type="checkbox">
+  <ul>
+    <li style="color:red" *ngFor="let p of result">
+      No."{{p.id}}" - {{p.Nombre}}.
+    </li>
+  </ul>
+</div>
+

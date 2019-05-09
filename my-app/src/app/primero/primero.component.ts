@@ -6,43 +6,50 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./primero.component.css']
 })
 export class PrimeroComponent implements OnInit {
-  Objeto={
+  Pokemon={
     "0": {
-        "id": "2287947",
-        "chattime": "1544102153",
-        "chat": "Finalizado",
-        "chattype": "text",
-        "media": "",
-        "outgoing": "0",
-        "bot": "0",
-        "unread": "1",
-        "email_created": ""
+      "id": "1",
+      "Nombre": "Bulbasaur",
+      "Tipo": "Finalizado",
+      "Puntos_salud": 100,
+      "Puntos_Ataque": 20,
+      "Puntos_Defensa": 25
     },
     "1": {
-      "id": "2287947",
-      "chattime": "1544102153",
-      "chat": "Finalizado",
-      "chattype": "text",
-      "media": "",
-      "outgoing": "0",
-      "bot": "0",
-      "unread": "1",
-      "email_created": ""
-  },
+      "id": "2",
+      "Nombre": "Squirtle",
+      "Tipo": "Finalizado",
+      "Puntos_salud": 100,
+      "Puntos_Ataque": 20,
+      "Puntos_Defensa": 25
+    },
     "2": {
-        "id": "2287931",
-        "chattime": "1544102141",
-        "chat": "asdasdasd",
-        "chattype": "text",
-        "media": "",
-        "outgoing": "1",
-        "bot": "0",
-        "unread": "0",
-        "email_created": "api"
+      "id": "3",
+      "Nombre": "Charmander",
+      "Tipo": "asdasdasd",
+      "Puntos_salud": 100,
+      "Puntos_Ataque": 20,
+      "Puntos_Defensa": 25
+    },
+    "3": {
+      "id": "4",
+      "Nombre": "Pikachu",
+      "Tipo": "asdasdasd",
+      "Puntos_salud": 100,
+      "Puntos_Ataque": 20,
+      "Puntos_Defensa": 25
+    },
+    "4": {
+      "id": "5",
+      "Nombre": "Eevee",
+      "Tipo": "asdasdasd",
+      "Puntos_salud": 100,
+      "Puntos_Ataque": 20,
+      "Puntos_Defensa": 25
     }
-}
-  result = Object.keys(this.Objeto).map(e=>this.Objeto[e]);
-  ok=false;
+  }
+  result = Object.keys(this.Pokemon).map(e=>this.Pokemon[e]);
+  ok:boolean=true;
   constructor() { }
 
   ngOnInit() {
